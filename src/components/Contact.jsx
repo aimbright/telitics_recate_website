@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaGlobe } from 'react-icons/fa';
+import supportImage from '../assets/images/support.jpg';
 import './Contact.css';
 
 const Contact = () => {
@@ -27,7 +28,15 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact">
-      <div className="container">
+      {/* Background support image */}
+      <div 
+        className="contact-background-image"
+        style={{
+          backgroundImage: `url(${supportImage})`
+        }}
+      />
+      
+      <div className="contact-wrapper">
         <div className="section-header">
           <h2 className="section-title">Get in Touch</h2>
           <p className="section-subtitle">
@@ -73,7 +82,6 @@ const Contact = () => {
             
             <div className="contact-buttons">
               <button className="btn btn-primary">Request a Demo</button>
-              <button className="btn btn-secondary">Locate on Map</button>
             </div>
           </div>
           

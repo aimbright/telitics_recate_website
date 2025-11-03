@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaLinkedin, FaTwitter, FaFacebook, FaYoutube } from 'react-icons/fa';
-import logoImage from '../assets/images/tics1_no_bg.png';
+import logoImage from '../assets/images/tics1.png';
 import './Footer.css';
 
 const Footer = () => {
@@ -74,12 +74,13 @@ const Footer = () => {
         </div>
         
         <div className="footer-bottom">
-          <img src={logoImage} alt="Telitics Logo" className="footer-logo-small" />
-          <p>&copy; {currentYear} Telitics. All Rights Reserved.</p>
+          <p>Copyright© {currentYear} Telitics. All Rights Reserved.</p>
           <div className="footer-legal">
             <a href="#">Privacy Policy</a>
             <span>•</span>
             <a href="#">Terms of Service</a>
+            <span>•</span>
+            <a href="https://aimbright.in/" target="_blank" rel="noopener noreferrer">Built by Aimbright.in</a>
           </div>
         </div>
       </div>

@@ -1,5 +1,7 @@
 import React from 'react';
 import { FaUserTie, FaUsers } from 'react-icons/fa';
+import agentsImage from '../assets/images/better_experience_agents2.png';
+import customersImage from '../assets/images/better_experience_customers.png.png';
 import './Benefits.css';
 
 const Benefits = () => {
@@ -9,9 +11,11 @@ const Benefits = () => {
         <div className="container">
           <div className="benefits-content">
             <div className="benefits-visual">
-              <div className="benefits-icon">
-                <FaUserTie />
-              </div>
+              <img 
+                src={agentsImage} 
+                alt="Better experience for agents" 
+                className="benefits-image"
+              />
             </div>
             <div className="benefits-text">
               <h2 className="benefits-title">Better experience for agents</h2>
@@ -34,9 +38,11 @@ const Benefits = () => {
         <div className="container">
           <div className="benefits-content reverse">
             <div className="benefits-visual">
-              <div className="benefits-icon">
-                <FaUsers />
-              </div>
+              <img 
+                src={customersImage} 
+                alt="Better experience for customers" 
+                className="benefits-image"
+              />
             </div>
             <div className="benefits-text">
               <h2 className="benefits-title">Better experience for customers</h2>

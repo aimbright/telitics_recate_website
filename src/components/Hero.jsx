@@ -1,11 +1,23 @@
 import React from 'react';
-import logoImage from '../assets/images/tics1_no_bg.png';
+import Navbar from './Navbar';
+import heroImage from '../assets/images/hero-image.png';
 import './Hero.css';
 
 const Hero = () => {
   return (
     <section id="hero" className="hero">
-      <div className="hero-content container">
+      {/* Background hero image */}
+      <div 
+        className="hero-background-image"
+        style={{
+          backgroundImage: `url(${heroImage})`
+        }}
+      />
+      
+      {/* Navbar inside hero section */}
+      <Navbar />
+      
+      <div className="hero-content">
         <div className="hero-text">
           <h1 className="hero-title">
             Effortless, compliant communication <br />
@@ -21,6 +33,15 @@ const Hero = () => {
             <button className="btn btn-primary">Book a demo</button>
             <button className="btn btn-secondary">Learn more</button>
           </div>
+        </div>
+        
+        {/* Hero image on the right */}
+        <div className="hero-image-container">
+          <img 
+            src={heroImage} 
+            alt="Professional using Telitics cloud telephony platform" 
+            className="hero-image"
+          />
         </div>
       </div>
     </section>

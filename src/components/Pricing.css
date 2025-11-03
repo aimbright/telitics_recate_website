@@ -16,8 +16,7 @@
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  margin-bottom: 50px;
+  gap: 48px;
 }
 
 .pricing-card {
@@ -77,20 +76,6 @@
 .check-icon {
   color: var(--cloud-blue);
   flex-shrink: 0;
-}
-
-.pricing-cta {
-  text-align: center;
-  padding: 40px;
-  background: var(--gray-100);
-  border-radius: 16px;
-}
-
-.pricing-cta p {
-  font-size: 20px;
-  margin-bottom: 20px;
-  color: var(--gray-900);
-  font-weight: 600;
 }
 
 @media (max-width: 768px) {

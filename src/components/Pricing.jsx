@@ -61,11 +61,6 @@ const Pricing = () => {
             </div>
           ))}
         </div>
-        
-        <div className="pricing-cta">
-          <p>Need a custom solution?</p>
-          <button className="btn btn-secondary">Talk to Sales</button>
-        </div>
       </div>
     </section>
   );

@@ -1,4 +1,5 @@
 import React from 'react';
+import agentsImage from '../assets/images/better_experience_agents2.png';
 import './Certifications.css';
 
 const Certifications = () => {
@@ -12,17 +13,28 @@ const Certifications = () => {
 
   return (
     <section id="certifications" className="certifications">
-      <div className="container">
+      <div className="certifications-wrapper">
         <div className="certifications-header">
           <h2 className="certifications-title">Proven security. Trusted by enterprises.</h2>
         </div>
-        <div className="certifications-grid">
-          {certifications.map((cert, index) => (
-            <div key={index} className="certification-item">
-              <div className="certification-badge">{cert.name}</div>
-              <p className="certification-label">{cert.label}</p>
-            </div>
-          ))}
+        
+        <div className="certifications-content">
+          <div className="certifications-image">
+            <img 
+              src={agentsImage} 
+              alt="Enterprise security and trust" 
+              className="certifications-img"
+            />
+          </div>
+          
+          <div className="certifications-grid">
+            {certifications.map((cert, index) => (
+              <div key={index} className="certification-item">
+                <div className="certification-badge">{cert.name}</div>
+                <p className="certification-label">{cert.label}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

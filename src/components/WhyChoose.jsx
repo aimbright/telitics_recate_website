@@ -1,4 +1,5 @@
 import React from 'react';
+import backgroundPatternImage from '../assets/images/background-pattern.jpg';
 import './WhyChoose.css';
 
 const WhyChoose = () => {
@@ -43,6 +44,14 @@ const WhyChoose = () => {
 
   return (
     <section className="why-choose">
+      {/* Background pattern image */}
+      <div 
+        className="why-choose-background-image"
+        style={{
+          backgroundImage: `url(${backgroundPatternImage})`
+        }}
+      />
+      
       <div className="container">
         <div className="why-choose-header">
           <h2 className="why-choose-title">Why choose Telitics for your cloud communication solution?</h2>

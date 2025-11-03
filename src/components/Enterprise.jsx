@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaPhoneAlt, FaSms, FaUsers, FaChartLine } from 'react-icons/fa';
+import enterprisePlatformImage from '../assets/images/enterprise-platform.jpg';
 import './Enterprise.css';
 
 const Enterprise = () => {
@@ -28,7 +29,15 @@ const Enterprise = () => {
 
   return (
     <section id="enterprise" className="enterprise">
-      <div className="container">
+      {/* Background enterprise image */}
+      <div 
+        className="enterprise-background-image"
+        style={{
+          backgroundImage: `url(${enterprisePlatformImage})`
+        }}
+      />
+      
+      <div className="enterprise-wrapper">
         <div className="enterprise-content">
           <div className="enterprise-text">
             <h2 className="section-title">Enterprise Cloud Telephony</h2>
@@ -40,7 +49,9 @@ const Enterprise = () => {
             </p>
             <button className="btn btn-primary">Learn More</button>
           </div>
-          
+        </div>
+        
+        <div className="enterprise-features-wrapper">
           <div className="enterprise-features">
             {features.map((feature, index) => (
               <div key={index} className="enterprise-feature">
