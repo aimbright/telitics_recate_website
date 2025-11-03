@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaGlobe } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import supportImage from '../assets/images/support.jpg';
 import './Contact.css';
 
-const Contact = () => {
+const Contact = ({ onOpenForm }) => {
   const [formData, setFormData] = useState({
     name: '',
     organization: '',
@@ -50,9 +50,13 @@ const Contact = () => {
               <FaMapMarkerAlt className="info-icon" />
               <div>
                 <h4>Address</h4>
-                <p>#309, KTC Building, Image Hospital Road<br />
-                Gafoor Nagar, Madhapur<br />
-                Hyderabad – 500081</p>
+                <p>
+                  <a href="https://www.google.com/maps/search/?api=1&query=309+KTC+Building+Madhapur+Hyderabad+500081" target="_blank" rel="noopener noreferrer">
+                    #309, KTC Building, Image Hospital Road<br />
+                    Gafoor Nagar, Madhapur<br />
+                    Hyderabad – 500081
+                  </a>
+                </p>
               </div>
             </div>
             
@@ -60,7 +64,11 @@ const Contact = () => {
               <FaPhone className="info-icon" />
               <div>
                 <h4>Phone</h4>
-                <p>+91 40-23119433</p>
+                <p>
+                  <a href="tel:+914023119433">
+                    +91 40-23119433
+                  </a>
+                </p>
               </div>
             </div>
             
@@ -68,20 +76,28 @@ const Contact = () => {
               <FaEnvelope className="info-icon" />
               <div>
                 <h4>Email</h4>
-                <p>info.tt@telitics.com</p>
+                <p>
+                  <a href="mailto:info.tt@telitics.com">
+                    info.tt@telitics.com
+                  </a>
+                </p>
               </div>
             </div>
             
             <div className="info-item">
-              <FaGlobe className="info-icon" />
+              <FaWhatsapp className="info-icon" />
               <div>
-                <h4>Website</h4>
-                <p>www.telitics.com</p>
+                <h4>WhatsApp</h4>
+                <p>
+                  <a href="https://wa.me/914023119433" target="_blank" rel="noopener noreferrer">
+                    +91 40-23119433
+                  </a>
+                </p>
               </div>
             </div>
             
             <div className="contact-buttons">
-              <button className="btn btn-primary">Request a Demo</button>
+              <button className="btn btn-primary" onClick={onOpenForm}>Request a Demo</button>
             </div>
           </div>
           

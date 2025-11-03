@@ -56,11 +56,11 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.25;
+  opacity: 0.4;
   margin: 0;
   padding: 0;
-  filter: blur(8px);
-  transform: scale(1.1);
+  filter: blur(3px);
+  transform: scale(1.05);
 }
 
 .hero-content {

@@ -3,7 +3,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import logoImage from '../assets/images/tics1.png';
 import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ onOpenForm }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
 
@@ -102,7 +102,7 @@ const Navbar = () => {
         </div>
         
         <div className="navbar-actions">
-          <button className="btn-nav-cta">
+          <button className="btn-nav-cta" onClick={onOpenForm || (() => {})}>
             Book a demo
           </button>
         </div>

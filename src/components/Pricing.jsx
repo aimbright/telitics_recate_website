@@ -2,7 +2,7 @@ import React from 'react';
 import { FaCheck } from 'react-icons/fa';
 import './Pricing.css';
 
-const Pricing = () => {
+const Pricing = ({ onOpenForm }) => {
   const plans = [
     {
       name: "Basic",
@@ -57,7 +57,7 @@ const Pricing = () => {
                   </li>
                 ))}
               </ul>
-              <button className="btn btn-primary">Choose Plan</button>
+              <button className="btn btn-primary" onClick={onOpenForm}>Choose Plan</button>
             </div>
           ))}
         </div>

@@ -84,6 +84,17 @@
   line-height: 1.6;
 }
 
+.info-item p a {
+  color: var(--gray-600);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.info-item p a:hover {
+  color: var(--cloud-blue);
+  text-decoration: underline;
+}
+
 .contact-buttons {
   display: flex;
   flex-direction: column;

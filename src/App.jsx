@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Benefits from './components/Benefits';
@@ -10,21 +10,28 @@ import Values from './components/Values';
 import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import GoogleFormModal from './components/GoogleFormModal';
 import './App.css';
 
 function App() {
+  const [isFormModalOpen, setIsFormModalOpen] = useState(false);
+
+  const openFormModal = () => setIsFormModalOpen(true);
+  const closeFormModal = () => setIsFormModalOpen(false);
+
   return (
     <div className="App">
-      <Hero />
-      <Benefits />
+      <Hero onOpenForm={openFormModal} />
+      <Benefits onOpenForm={openFormModal} />
       <WhyChoose />
       <Solutions />
-      <Enterprise />
-      <Pricing />
+      <Enterprise onOpenForm={openFormModal} />
+      <Pricing onOpenForm={openFormModal} />
       <Values />
       <Certifications />
-      <Contact />
+      <Contact onOpenForm={openFormModal} />
       <Footer />
+      <GoogleFormModal isOpen={isFormModalOpen} onClose={closeFormModal} />
     </div>
   );
 }

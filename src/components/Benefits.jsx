@@ -4,7 +4,7 @@ import agentsImage from '../assets/images/better_experience_agents2.png';
 import customersImage from '../assets/images/better_experience_customers.png.png';
 import './Benefits.css';
 
-const Benefits = () => {
+const Benefits = ({ onOpenForm }) => {
   return (
     <>
       <section className="benefits-section agent-benefits">
@@ -28,7 +28,7 @@ const Benefits = () => {
                 and improved KPIs. With flexible communication options and end-to-end visibility, 
                 Telitics empowers teams to deliver faster, safer, and more efficient customer interactions.
               </p>
-              <button className="btn btn-secondary">View solutions</button>
+              <button className="btn btn-secondary" onClick={onOpenForm}>View solutions</button>
             </div>
           </div>
         </div>
@@ -55,7 +55,7 @@ const Benefits = () => {
                 enhance first contact resolution. The outcome? Seamless, channel-of-choice 
                 transactions that drive higher CSAT scores and stronger KPIs.
               </p>
-              <button className="btn btn-secondary">View solutions</button>
+              <button className="btn btn-secondary" onClick={onOpenForm}>View solutions</button>
             </div>
           </div>
         </div>

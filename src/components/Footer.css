@@ -75,10 +75,16 @@
   color: #A0AEC0;
   font-size: 14px;
   transition: color 0.3s ease;
+  text-decoration: none;
 }
 
 .footer-links a:hover {
   color: var(--cloud-blue);
+  text-decoration: underline;
+}
+
+.footer-links li {
+  color: #A0AEC0;
 }
 
 .footer-bottom {

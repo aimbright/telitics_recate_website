@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import heroImage from '../assets/images/hero-image.png';
 import './Hero.css';
 
-const Hero = () => {
+const Hero = ({ onOpenForm }) => {
   return (
     <section id="hero" className="hero">
       {/* Background hero image */}
@@ -15,7 +15,7 @@ const Hero = () => {
       />
       
       {/* Navbar inside hero section */}
-      <Navbar />
+      <Navbar onOpenForm={onOpenForm} />
       
       <div className="hero-content">
         <div className="hero-text">
@@ -30,8 +30,8 @@ const Hero = () => {
           </p>
           
           <div className="hero-cta">
-            <button className="btn btn-primary">Book a demo</button>
-            <button className="btn btn-secondary">Learn more</button>
+            <button className="btn btn-primary" onClick={onOpenForm}>Book a demo</button>
+            <button className="btn btn-secondary" onClick={onOpenForm}>Learn more</button>
           </div>
         </div>
         

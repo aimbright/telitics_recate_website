@@ -17,16 +17,16 @@ const Footer = () => {
               Leading cloud telephony and analytics solutions provider since 2009.
             </p>
             <div className="social-links">
-              <a href="#" className="social-icon" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/company/telitics" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="LinkedIn">
                 <FaLinkedin />
               </a>
-              <a href="#" className="social-icon" aria-label="Twitter">
+              <a href="https://twitter.com/telitics" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Twitter">
                 <FaTwitter />
               </a>
-              <a href="#" className="social-icon" aria-label="Facebook">
+              <a href="https://www.facebook.com/telitics" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Facebook">
                 <FaFacebook />
               </a>
-              <a href="#" className="social-icon" aria-label="YouTube">
+              <a href="https://www.youtube.com/telitics" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="YouTube">
                 <FaYoutube />
               </a>
             </div>
@@ -53,22 +53,28 @@ const Footer = () => {
           </div>
           
           <div className="footer-section">
-            <h4 className="footer-heading">Resources</h4>
-            <ul className="footer-links">
-              <li><a href="#">API Documentation</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Help Center</a></li>
-              <li><a href="#">Downloads</a></li>
-            </ul>
-          </div>
-          
-          <div className="footer-section">
             <h4 className="footer-heading">Contact Info</h4>
             <ul className="footer-links">
-              <li>📍 #309, KTC Building, Madhapur</li>
-              <li>📞 +91 40-23119433</li>
-              <li>📧 info.tt@telitics.com</li>
-              <li>🌐 www.telitics.com</li>
+              <li>
+                <a href="https://www.google.com/maps/search/?api=1&query=309+KTC+Building+Madhapur+Hyderabad+500081" target="_blank" rel="noopener noreferrer">
+                  📍 #309, KTC Building, Madhapur
+                </a>
+              </li>
+              <li>
+                <a href="tel:+914023119433">
+                  📞 +91 40-23119433
+                </a>
+              </li>
+              <li>
+                <a href="mailto:info.tt@telitics.com">
+                  📧 info.tt@telitics.com
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/914023119433" target="_blank" rel="noopener noreferrer">
+                  💬 WhatsApp
+                </a>
+              </li>
             </ul>
           </div>
         </div>

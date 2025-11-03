@@ -3,7 +3,7 @@ import { FaPhoneAlt, FaSms, FaUsers, FaChartLine } from 'react-icons/fa';
 import enterprisePlatformImage from '../assets/images/enterprise-platform.jpg';
 import './Enterprise.css';
 
-const Enterprise = () => {
+const Enterprise = ({ onOpenForm }) => {
   const features = [
     {
       icon: <FaPhoneAlt />,
@@ -47,7 +47,7 @@ const Enterprise = () => {
               communication for enterprises. Scale effortlessly while maintaining the 
               highest levels of security and reliability.
             </p>
-            <button className="btn btn-primary">Learn More</button>
+            <button className="btn btn-primary" onClick={onOpenForm}>Learn More</button>
           </div>
         </div>
         

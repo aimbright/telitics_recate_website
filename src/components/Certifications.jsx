@@ -1,5 +1,5 @@
 import React from 'react';
-import agentsImage from '../assets/images/better_experience_agents2.png';
+import agentsImage from '../assets/images/better_experience_agents.png';
 import './Certifications.css';
 
 const Certifications = () => {
