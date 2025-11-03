@@ -1,84 +1,73 @@
-# Telitics Technologies Website
+# Welcome to your Lovable project
 
-A modern, professional React website for Telitics Technologies Pvt. Ltd. - a cloud telephony and communication analytics company.
+## Project info
 
-## 🎯 Features
+**URL**: https://lovable.dev/projects/6c1e0f4b-a1a6-43b1-898e-0cd31754d541
 
-- **Modern Sycurio-inspired design** with blue gradient backgrounds
-- **Fully responsive** - works on desktop, tablet, and mobile
-- **9 comprehensive sections**:
-  - Hero with animated gradient background
-  - About section with company highlights
-  - Why Choose Telitics
-  - Solutions showcase (6 products)
-  - Enterprise Platform features
-  - Flexible Pricing plans
-  - Customer Values with Gandhi quote
-  - Contact form
-  - Professional footer
+## How can I edit this code?
 
-## 🚀 Getting Started
+There are several ways of editing your application.
 
-### Prerequisites
+**Use Lovable**
 
-- Node.js (v16 or higher)
-- npm or yarn
+Simply visit the [Lovable Project](https://lovable.dev/projects/6c1e0f4b-a1a6-43b1-898e-0cd31754d541) and start prompting.
 
-### Installation
+Changes made via Lovable will be committed automatically to this repo.
 
-1. Navigate to the project directory:
-```bash
-cd telitics_website
-```
+**Use your preferred IDE**
 
-2. Install dependencies:
-```bash
-npm install
-```
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-3. Start the development server:
-```bash
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+Follow these steps:
+
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
+
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
+
+# Step 3: Install the necessary dependencies.
+npm i
+
+# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
 
-4. Open your browser and visit: `http://localhost:5173`
+**Edit a file directly in GitHub**
 
-## 📦 Build for Production
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-```bash
-npm run build
-```
+**Use GitHub Codespaces**
 
-The optimized build will be in the `dist` folder.
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## 🎨 Design
+## What technologies are used for this project?
 
-- **Primary Colors**: Cloud Blue (#00AEEF), Deep Navy (#0F1724)
-- **Font**: Inter (Modern geometric sans-serif)
-- **Style**: Clean, tech-oriented, minimal, trustworthy
+This project is built with:
 
-## 📱 Responsive Design
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
-The website is fully responsive and optimized for:
-- Desktop (1200px+)
-- Tablet (768px - 1199px)
-- Mobile (< 768px)
+## How can I deploy this project?
 
-## 🔧 Technologies Used
+Simply open [Lovable](https://lovable.dev/projects/6c1e0f4b-a1a6-43b1-898e-0cd31754d541) and click on Share -> Publish.
 
-- React 18
-- Vite (Build tool)
-- React Icons
-- CSS3 with modern features (Grid, Flexbox, Animations)
+## Can I connect a custom domain to my Lovable project?
 
-## 📄 License
+Yes, you can!
 
-© 2009–2025 Telitics Technologies Pvt. Ltd. All Rights Reserved.
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-## 📞 Contact
-
-- **Address**: #309, KTC Building, Madhapur, Hyderabad – 500081
-- **Phone**: +91 40-23119433
-- **Email**: info.tt@telitics.com
-- **Website**: www.telitics.com
-
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
