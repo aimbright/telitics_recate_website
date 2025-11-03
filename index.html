@@ -51,13 +51,6 @@
         }
       });
 
-      // Diagnostic: Check if React loaded after 3 seconds
-      setTimeout(() => {
-        const root = document.getElementById('root');
-        if (root && root.innerHTML.trim() === '') {
-          root.innerHTML = '<div style="padding: 20px; color: red; font-family: monospace; background: #fff; border: 2px solid red; margin: 20px;">⚠️ JavaScript is running but React did not render. Check browser console (F12) for errors.</div>';
-        }
-      }, 3000);
     </script>
   </body>
 </html>
