@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Benefits from './components/Benefits';
 import WhyChoose from './components/WhyChoose';
@@ -16,8 +15,12 @@ import './App.css';
 function App() {
   const [isFormModalOpen, setIsFormModalOpen] = useState(false);
 
-  const openFormModal = () => setIsFormModalOpen(true);
-  const closeFormModal = () => setIsFormModalOpen(false);
+  const openFormModal = () => {
+    setIsFormModalOpen(true)
+  }
+  const closeFormModal = () => {
+    setIsFormModalOpen(false)
+  }
 
   return (
     <div className="App">

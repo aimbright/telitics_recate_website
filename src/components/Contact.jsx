@@ -21,7 +21,6 @@ const Contact = ({ onOpenForm }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
     alert('Thank you! We will get back to you soon.');
     setFormData({ name: '', organization: '', phone: '', email: '', message: '' });
   };

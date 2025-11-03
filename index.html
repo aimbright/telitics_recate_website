@@ -10,7 +10,55 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // Fix for __DEFINES__ error - define it before Vite client loads
+      // This must be defined before the Vite client script runs
+      if (typeof __DEFINES__ === 'undefined') {
+        // Define as a global variable that modules can access
+        var __DEFINES__ = {};
+      }
+    </script>
+    <script type="module" src="/src/main.jsx?v=1"></script>
+    <script>
+      // Global error handler
+      window.addEventListener('error', (event) => {
+        console.error('Global error:', event.error);
+        const root = document.getElementById('root');
+        if (root && root.innerHTML.trim() === '') {
+          root.innerHTML = `
+            <div style="padding: 20px; color: red; font-family: monospace; background: #fff; border: 2px solid red; margin: 20px;">
+              <h2>⚠️ JavaScript Error</h2>
+              <p><strong>Error:</strong> ${event.error ? event.error.message : event.message}</p>
+              <p><strong>File:</strong> ${event.filename}</p>
+              <p><strong>Line:</strong> ${event.lineno}</p>
+              <pre style="background: #f5f5f5; padding: 10px; overflow: auto;">${event.error ? event.error.stack : 'No stack trace'}</pre>
+            </div>
+          `;
+        }
+      });
+
+      // Unhandled promise rejection handler
+      window.addEventListener('unhandledrejection', (event) => {
+        console.error('Unhandled promise rejection:', event.reason);
+        const root = document.getElementById('root');
+        if (root && root.innerHTML.trim() === '') {
+          root.innerHTML = `
+            <div style="padding: 20px; color: red; font-family: monospace; background: #fff; border: 2px solid red; margin: 20px;">
+              <h2>⚠️ Unhandled Promise Rejection</h2>
+              <p><strong>Error:</strong> ${event.reason}</p>
+            </div>
+          `;
+        }
+      });
+
+      // Diagnostic: Check if React loaded after 3 seconds
+      setTimeout(() => {
+        const root = document.getElementById('root');
+        if (root && root.innerHTML.trim() === '') {
+          root.innerHTML = '<div style="padding: 20px; color: red; font-family: monospace; background: #fff; border: 2px solid red; margin: 20px;">⚠️ JavaScript is running but React did not render. Check browser console (F12) for errors.</div>';
+        }
+      }, 3000);
+    </script>
   </body>
 </html>
 
