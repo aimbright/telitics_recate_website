@@ -1,0 +1,25 @@
+.why-choose {
+  background: var(--white);
+}
+
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+.reason-card {
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.reason-card .card-icon {
+  margin: 0 auto 20px;
+}
+
+@media (max-width: 768px) {
+  .reasons-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
