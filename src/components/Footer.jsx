@@ -74,7 +74,8 @@ const Footer = () => {
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; 2009–{currentYear} Telitics Technologies Pvt. Ltd. All Rights Reserved.</p>
+          <img src={logoImage} alt="Telitics Logo" className="footer-logo-small" />
+          <p>&copy; {currentYear} Telitics. All Rights Reserved.</p>
           <div className="footer-legal">
             <a href="#">Privacy Policy</a>
             <span>•</span>

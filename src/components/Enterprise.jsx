@@ -27,7 +27,7 @@ const Enterprise = () => {
   ];
 
   return (
-    <section className="enterprise">
+    <section id="enterprise" className="enterprise">
       <div className="container">
         <div className="enterprise-content">
           <div className="enterprise-text">

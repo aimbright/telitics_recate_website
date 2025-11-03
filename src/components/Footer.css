@@ -50,8 +50,9 @@
 }
 
 .social-icon:hover {
-  background: var(--cloud-blue);
-  transform: translateY(-3px);
+  background: var(--gradient-primary);
+  transform: translateY(-4px) scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 174, 239, 0.3);
 }
 
 .footer-heading {
@@ -88,6 +89,13 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+.footer-logo-small {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.8;
 }
 
 .footer-bottom p {

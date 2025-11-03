@@ -31,7 +31,7 @@ const Pricing = () => {
   ];
 
   return (
-    <section className="pricing">
+    <section id="pricing" className="pricing">
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">Flexible Pricing for Every Business</h2>

@@ -1,5 +1,6 @@
 .about {
-  background: var(--gray-100);
+  background: var(--gray-50);
+  padding: 100px 20px;
 }
 
 .about-content {
@@ -44,15 +45,22 @@
 
 .highlight-icon {
   flex-shrink: 0;
-  width: 50px;
-  height: 50px;
-  background: linear-gradient(135deg, var(--cloud-blue), #0096D1);
-  border-radius: 12px;
+  width: 56px;
+  height: 56px;
+  background: var(--gradient-primary);
+  border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  font-size: 26px;
   color: var(--white);
+  box-shadow: 0 6px 20px rgba(0, 174, 239, 0.25);
+  transition: all 0.3s ease;
+}
+
+.highlight-item:hover .highlight-icon {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 10px 28px rgba(0, 174, 239, 0.35);
 }
 
 .highlight-item p {

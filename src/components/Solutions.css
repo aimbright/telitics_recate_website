@@ -1,11 +1,26 @@
 .solutions {
-  background: var(--gray-100);
+  background: var(--white);
+  padding: 120px 20px;
+  position: relative;
+}
+
+.solutions::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(180deg, rgba(0, 174, 239, 0.03) 0%, transparent 100%);
+  pointer-events: none;
 }
 
 .solutions-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 36px;
+  position: relative;
+  z-index: 1;
 }
 
 .solution-card {
@@ -38,6 +53,15 @@
   left: 0;
   color: var(--cloud-blue);
   font-weight: bold;
+  font-size: 16px;
+  background: var(--light-cyan);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
 }
 
 @media (max-width: 768px) {

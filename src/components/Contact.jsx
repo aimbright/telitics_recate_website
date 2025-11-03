@@ -26,7 +26,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact">
+    <section id="contact" className="contact">
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">Get in Touch</h2>

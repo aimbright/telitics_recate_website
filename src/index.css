@@ -7,14 +7,30 @@
 }
 
 :root {
+  /* Telitics Brand Colors - Matching Logo */
   --cloud-blue: #00AEEF;
+  --cloud-blue-dark: #0096D1;
+  --cloud-blue-light: #00D4FF;
   --deep-navy: #0F1724;
+  --navy-dark: #0A0F1A;
+  --navy-light: #1A2332;
+  --red-accent: #FF4444;
+  --red-accent-light: #FF6666;
+  
+  /* Supporting Colors */
   --light-cyan: #E6F7FF;
   --white: #FFFFFF;
+  --gray-50: #FAFBFC;
   --gray-100: #F5F7FA;
+  --gray-200: #E5E8ED;
   --gray-300: #D1D5DB;
-  --gray-600: #4B5563;
+  --gray-600: #6B7280;
+  --gray-700: #4B5563;
   --gray-900: #111827;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--cloud-blue) 0%, var(--cloud-blue-dark) 100%);
+  --gradient-hero: linear-gradient(135deg, rgba(0, 174, 239, 0.05) 0%, rgba(0, 150, 209, 0.03) 100%);
 }
 
 body {
@@ -55,15 +71,28 @@ a {
 }
 
 section {
-  padding: 80px 20px;
-  max-width: 1200px;
+  padding: 120px 20px;
+  max-width: 1400px;
   margin: 0 auto;
+  position: relative;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
 }
 
 /* Animations */
@@ -71,6 +100,17 @@ section {
   from {
     opacity: 0;
     transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
   }
   to {
     opacity: 1;
@@ -90,14 +130,34 @@ section {
 @keyframes pulse {
   0%, 100% {
     opacity: 1;
+    transform: scale(1);
   }
   50% {
-    opacity: 0.5;
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
   }
 }
 
 .fade-in {
   animation: fadeIn 0.8s ease-out;
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Responsive */

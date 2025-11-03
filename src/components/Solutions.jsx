@@ -43,7 +43,7 @@ const Solutions = () => {
   ];
 
   return (
-    <section className="solutions">
+    <section id="solutions" className="solutions">
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">Our Solutions</h2>

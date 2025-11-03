@@ -23,7 +23,7 @@ const About = () => {
   ];
 
   return (
-    <section className="about">
+    <section id="about" className="about">
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">About Telitics</h2>
